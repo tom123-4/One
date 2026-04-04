@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TN Hotel Booking</title>
+    <style>
+        /* General Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            padding-bottom: 50px;
+        }
+
+        /* Purple Header Section */
+        header {
+            background-color: #800080; /* Purple */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 15px;
+            border-radius: 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Hotel List Layout */
+        .container {
+            padding: 0 15px;
+        }
+
+        .hotel-card {
+            background: white;
+            display: flex; /* Makes image and text horizontal */
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 12px;
+            border-left: 5px solid 
+            blueviolet; /* Yellow line like your screenshot */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .hotel-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .hotel-info h3 {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 4px;
+        }
+
+        .hotel-info p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Booking Form Section */
+        .booking-section {
+            background: white;
+            margin: 25px 15px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .booking-section h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .confirm-btn {
+            background-color: #28a745; /* Green button like your screenshot */
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tamil Nadu Hotel Finder</h1>
+        <p>Find the best stay for your trip!</p>
+    </header>
+
+    <div class="container">
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>1. Chennai Luxury Inn</h3>
+                <p>Marina Beach - ₹3000</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>2. Ooty Mist Resort</h3>
+                <p>Hill Station - ₹2500</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>3. Kodai Lake View</h3>
+                <p>Nature Stay - ₹2000</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="http://googleusercontent.com/image_collection/image_retrieval/4012973675219915901_0" alt="Madurai Stay">
+            <div class="hotel-info">
+                <h3>4. Madurai Temple Stay</h3>
+                <p>Heritage - ₹1500</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>5. Kanyakumari Sunrise</h3>
+                <p>Beachfront - ₹2200</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>6. Rameshwaram Guest House</h3>
+                <p>Divine Stay - ₹1200</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>7. The Kovai Grand</h3>
+                <p>City Center - ₹3800</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>8. Yercaud Green Hills</h3>
+                <p>Forest View - ₹1800</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>9. Thanjavur Royal Stay</h3>
+                <p>Culture Hub - ₹2400</p>
+            </div>
+        </div>
+        <div class="hotel-card">
+            <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=200" alt="Hotel">
+            <div class="hotel-info">
+                <h3>10. Mahabs Beach Resort</h3>
+                <p>Sea View - ₹3500</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-section">
+        <h2>Enter Required Stay Details</h2>
+        
+        <div class="form-group">
+            <label>Pick Hotel (Type Number 1-10):</label>
+            <input type="number" placeholder="e.g. 4">
+        </div>
+
+        <div class="form-group">
+            <label>Check-in Date:</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>Check-out Date:</label>
+            <input type="date">
+        </div>
+
+        <div class="form-group">
+            <label>Room Type:</label>
+            <select>
+                <option>Single Bed</option>
+                <option>Double Bed</option>
+                <option>Luxury Suite</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Total Guests:</label>
+            <input type="number" value="1">
+        </div>
+
+        <button class="confirm-btn">Confirm My Booking</button>
+    </div>
+
+    <p class="footer-text">Tamil Nadu Tourism | College Project 2026</p>
+
+</body>
+</html>
