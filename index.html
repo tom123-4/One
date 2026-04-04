@@ -1,293 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamil Nadu Travel Guide</title>
-    <style>
-        /* Purple Theme Settings */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3effa; 
-            line-height: 1.7;
-            color: #333;
-        }
+<title>Tamilnadu Tourism</title>
 
-        /* Modern Purple Navbar */
-        .navbar {
-            background-color: #4b0082; 
-            color: white;
-            padding: 18px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            padding: 10px 20px;
-            transition: 0.3s;
-        }
+/* NAVBAR */
+nav {
+    background-color: purple;
+    padding: 15px;
+    text-align: center;
+}
 
-        .navbar a:hover {
-            background: rgba(255,255,255,0.1);
-            border-radius: 5px;
-        }
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-        /* Main Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+nav a:hover {
+    color: yellow;
+}
 
-        h1 {
-            text-align: center;
-            color: #4b0082;
-            margin-bottom: 50px;
-            font-size: 2.5rem;
-        }
+/* HERO / HEADER */
+.hero {
+    background: linear-gradient(to right, purple, violet);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-        /* Place Card Styling */
-        .place {
-            background: white;
-            margin-bottom: 60px;
-            border-radius: 20px;
-            box-shadow: 0px 10px 30px rgba(75, 0, 130, 0.1);
-            overflow: hidden;
-            border: 1px solid #e1d5f2;
-        }
+.hero h1 {
+    font-size: 40px;
+}
 
-        /* Image fully visible fix */
-        .place img {
-            width: 100%;
-            height: auto; 
-            display: block;
-            background-color: #2e004f; 
-        }
+.hero p {
+    font-size: 20px;
+}
 
-        .place-content {
-            padding: 35px;
-        }
+/* SECTION */
+.section {
+    padding: 30px;
+    text-align: center;
+}
 
-        .place h2 {
-            margin-top: 0;
-            color: #6a0dad; 
-            font-size: 2rem;
-            border-bottom: 3px solid #6a0dad;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
+/* WHY CHOOSE US */
+.check-list {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
 
-        .place p {
-            font-size: 1.05rem;
-            color: #444;
-            margin-bottom: 25px;
-        }
+.check-list p::before {
+    content: "✔ ";
+    color: green;
+}
 
-        /* Semantic Info Grid */
-        section {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
-        }
+/* VIDEO */
+video {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px gray;
+}
 
-        article {
-            flex: 1;
-            min-width: 250px;
-            background: #f8f0ff;
-            padding: 18px;
-            border-radius: 12px;
-            border-left: 6px solid #6a0dad;
-        }
+/* LOGIN FORM */
+.login-box {
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px gray;
+}
 
-        article strong {
-            display: block;
-            color: #4b0082;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
+.login-box h2 {
+    text-align: center;
+    color: purple;
+}
 
-        /* Navigation Button */
-        .nav-button {
-            display: inline-block;
-            background-color: #6a0dad;
-            color: white;
-            padding: 14px 35px;
-            text-decoration: none;
-            border-radius: 50px; 
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
 
-        .nav-button:hover {
-            background-color: #4b0082;
-            box-shadow: 0 5px 15px rgba(106, 13, 173, 0.4);
-        }
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
-        footer {
-            text-align: center;
-            padding: 50px;
-            background: #2e004f;
-            color: #d1b3ff;
-            margin-top: 60px;
-        }
-    </style>
+.login-box button:hover {
+    background-color: darkviolet;
+}
+
+/* FOOTER */
+footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="index.html">HOME</a>
-    </nav>
+<!-- NAVBAR -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Places</a>
+    <a href="#">Hotels</a>
+    <a href="#">Contact</a>
+</nav>
 
-    <main class="container">
-        <h1>Discover Tamil Nadu</h1>
+<!-- HERO / HEADER -->
+<div class="hero">
+    <h1>Explore Tamilnadu</h1>
+    <p>Discover Culture, Temples, Beaches & Hill Stations</p>
+</div>
 
-        <div class="place">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Chennai_High_Court.jpg/1280px-Chennai_High_Court.jpg">
-            <div class="place-content">
-                <h2>1. Chennai</h2>
-                <p>Chennai, the capital city, is a vibrant blend of tradition and modernity. From the historic temples of Mylapore to the bustling IT corridors, it offers something for everyone. It is the cultural hub of South India, famous for its classical music and dance festivals.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Nov to Feb</article>
-                    <article><strong>🌟 Famous For</strong> Marina Beach & Kapaleeshwarar Temple</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Marina+Beach+Chennai" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
+<!-- DESCRIPTION -->
+<div class="section">
+    <h2>About Tamilnadu Tourism</h2>
+    <p>
+        Tamilnadu is a land of ancient temples, beautiful beaches, 
+        peaceful hill stations, and rich cultural heritage.
+        Plan your perfect trip with us!
+    </p>
+</div>
 
-        <div class="place">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Meenakshi_Amman_West_Tower.jpg/1920px-Meenakshi_Amman_West_Tower.jpg">
-            <div class="place-content">
-                <h2>2. Madurai</h2>
-                <p>Madurai is an ancient city known for its stunning architecture and deep history. The city is built around the Meenakshi Temple, making it a spiritual and cultural heart of the state.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Oct to Mar</article>
-                    <article><strong>🌟 Famous For</strong> Meenakshi Amman Temple</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Meenakshi+Amman+Temple+Madurai" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
+<!-- WHY CHOOSE US -->
+<div class="section">
+    <h2>Why Choose Us?</h2>
+    <div class="check-list">
+        <p>Affordable hotel bookings</p>
+        <p>Best tourist guidance</p>
+        <p>Easy travel planning</p>
+        <p>Friendly support during your trip</p>
+    </div>
+</div>
 
-        <div class="place">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Ooty_hills_2.jpg">
-            <div class="place-content">
-                <h2>3. Ooty</h2>
-                <p>The "Queen of Hill Stations," Ooty is a lush paradise in the Nilgiris. Its cool climate, rolling tea estates, and colonial charm make it the perfect mountain getaway.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Apr to June</article>
-                    <article><strong>🌟 Famous For</strong> Nilgiri Toy Train & Botanical Gardens</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Ooty+Botanical+Gardens" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
+<!-- VIDEO SECTION -->
+<div class="section">
+    <h2>Watch Tamilnadu</h2>
+    <video width="400" controls>
+        <source src="https://youtube.com/shorts/zJF9jsx8h_g?si=iW5A2gwnHJoTp_l2" type="video/mp4">
+        Your browser does not support video.
+    </video>
+</div>
 
-        <div class="place">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Terraced_farming-_Kodaikanal.jpg/1280px-Terraced_farming-_Kodaikanal.jpg">
-            <div class="place-content">
-                <h2>4. Kodaikanal</h2>
-                <p>Kodaikanal is a misty retreat famous for its star-shaped lake and pine forests. It offers a serene escape for nature lovers and trekkers looking for peace in the mountains.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Sept to May</article>
-                    <article><strong>🌟 Famous For</strong> Kodai Lake & Pillar Rocks</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Kodaikanal+Lake" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
+<!-- LOGIN FORM -->
+<div class="section">
+    <div class="login-box">
+        <h2>Login / Register</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone Number">
+        <input type="password" placeholder="Password">
+        <button>Submit</button>
+    </div>
+</div>
 
-        <div class="place">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/L%27Asc%C3%A8se_d%27Arjuna_%28Mahabalipuram%2C_Inde%29_%2813957935741%29.jpg/1280px-L%27Asc%C3%A8se_d%27Arjuna_%28Mahabalipuram%2C_Inde%29_%2813957935741%29.jpg">
-            <div class="place-content">
-                <h2>5. Mahabalipuram</h2>
-                <p>This UNESCO heritage site is a masterpiece of rock-cut architecture. The ancient Shore Temple and massive stone carvings tell the stories of the Pallava dynasty.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Nov to Feb</article>
-                    <article><strong>🌟 Famous For</strong> Shore Temple & Five Rathas</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Shore+Temple+Mahabalipuram" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
-
-        <div class="place">
-            <img src="https://hblimg.mmtcdn.com/content/hubble/img/dest/mmt/activities/t_trp/m_Thanjavur_dest_3_l_650_981.jpg?im=Resize=(750,399)">
-            <div class="place-content">
-                <h2>6. Thanjavur</h2>
-                <p>Thanjavur is the center of South Indian art and architecture. The Great Living Chola Temples found here are wonders of the medieval world.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Oct to Mar</article>
-                    <article><strong>🌟 Famous For</strong> Brihadisvara Temple</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Brihadisvara+Temple+Thanjavur" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
-
-        <div class="place">
-            <img src="https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/t_trp/m_Rameshwaram_tv_destination_img_7_l_1150_1726.jpg?im=Resize=(750,399)">
-            <div class="place-content">
-                <h2>7. Rameswaram</h2>
-                <p>A sacred island town connected to the mainland by the stunning Pamban Bridge. It is a major pilgrimage site with crystal clear waters and spiritual energy.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Oct to Apr</article>
-                    <article><strong>🌟 Famous For</strong> Ramanathaswamy Temple & Pamban Bridge</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Ramanathaswamy+Temple+Rameswaram" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
-
-        <div class="place">
-            <img src="https://www.karthitravels.com/images/destinations/kanyakumari.jpg">
-            <div class="place-content">
-                <h2>8. Kanyakumari</h2>
-                <p>The southernmost tip of India where three oceans meet. It is world-famous for its sunrise and sunset views over the water.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Oct to Mar</article>
-                    <article><strong>🌟 Famous For</strong> Vivekananda Rock Memorial</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Vivekananda+Rock+Memorial+Kanyakumari" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
-
-        <div class="place">
-            <img src="https://www.revv.co.in/blogs/wp-content/uploads/2020/03/weekend-getaways-from-coimbatore-1280x720.jpg">
-            <div class="place-content">
-                <h2>9. Coimbatore</h2>
-                <p>Coimbatore is a bustling hub for industry and nature. It serves as the gateway to the Nilgiri hills and is home to the stunning Adiyogi statue.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Sept to Mar</article>
-                    <article><strong>🌟 Famous For</strong> Adiyogi Statue (Isha Yoga Center)</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Adiyogi+Isha+Yoga+Center+Coimbatore" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
-
-        <div class="place">
-            <img src="https://ulacab.com/wp-content/uploads/2025/02/Feature-Image_-Trichy.jpg">
-            <div class="place-content">
-                <h2>10. Tiruchirappalli</h2>
-                <p>Commonly known as Trichy, this city features the magnificent Rockfort Temple. It is a historical city located on the banks of the Kaveri River.</p>
-                <section>
-                    <article><strong>📅 Best Time</strong> Nov to Feb</article>
-                    <article><strong>🌟 Famous For</strong> Rockfort Temple & Srirangam Temple</article>
-                </section>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=Rockfort+Temple+Trichy" target="_blank" class="nav-button">Start Navigation</a>
-            </div>
-        </div>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Tamil Nadu Travel Guide | Your Adventure Starts Here</p>
-    </footer>
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Tamilnadu Tourism | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
