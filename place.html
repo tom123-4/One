@@ -70,9 +70,9 @@ nav a:hover {
 
         /* Main Container */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 20px;
+            padding:40px 20px;
         }
 
         h1 {
@@ -85,22 +85,26 @@ nav a:hover {
         /* Place Card Styling */
         .place {
             background: light lavendar;
-            margin-bottom: 50px;
-            border-radius: 15px;
+            margin-bottom: 60px;
+            border-radius: 20px;
             box-shadow: 0px 10px 30px rgba(75, 0, 130, 0.1);
             overflow: hidden;
+            border:1px solid #e1d5f2;
+            transition:transform 0.3s ease;
         }
-
+        .place:hover{
+            transform:translateY(-5px);
+        }
         /* Image fully visible fix */
         .place img {
             width: 100%;
-            height: 450px; 
-            object-fit:cover;
+            height: auto; 
+            background-colour:#2e0041;
             display: block;
         }
 
         .place-content {
-            padding: 25px;
+            padding: 35px;
         }
 
         .place h2 {
@@ -148,11 +152,10 @@ nav a:hover {
             display: inline-block;
             background-color: #6a0dad;
             color: white;
-            padding: 10px 20px;
+            padding: 14px 35px;
             text-decoration: none;
-            border-radius: 5px; 
+            border-radius: 50px; 
             font-weight: bold;
-            margin-top:15px;
             transition: all 0.3s ease;
         }
 
