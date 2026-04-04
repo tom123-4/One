@@ -126,10 +126,62 @@
             font-size: 12px;
             color: #888;
             margin-top: 30px;
-        }
-    </style>
-</head>
+            <style>
+/* THE RESET - This is the most important part! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding-top: 80px; /* This keeps your content from hiding under the bar */
+}
+
+/* THE FULL-WIDTH NAV BAR */
+nav {
+    background-color:purple; /* Deep Purple */
+    width: 100%;               /* Full screen width */
+    position: fixed;           /* Sticks to top */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;           /* Height of the bar */
+    text-align: center;        /* Centers the links */
+    z-index: 10000;            /* Stays on top of everything */
+    display: block;            /* Ensures it's a full row */
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* THE HERO SECTION */
+.hero {
+    background: linear-gradient(to right, #4b0082, #9370db);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+}
 <body>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="places.html">Places</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="feast.html">Feast</a>
+</nav>        
 
     <header>
         <h1>Tamil Nadu Hotel Finder</h1>
