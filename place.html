@@ -25,9 +25,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI',tahoma,geneva,verdana,sans-serif;
     background-color: #f5f5f5;
-    padding-top: 100px; /* This keeps your content from hiding under the bar */
+    line-height:1.7;
+    padding-top: 80px; /* This keeps your content from hiding under the bar */
 }
 
 /* THE FULL-WIDTH NAV BAR */
@@ -40,7 +41,8 @@ body {
     right: 0;
     padding: 20px 0;           /* Height of the bar */
     text-align: center;        /* Centers the links */
-    z-index: 10000;            /* Stays on top of everything */            /* Ensures it's a full row */
+    z-index: 10000;            /* Stays on top of everything */ 
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
 nav a {
@@ -49,6 +51,7 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    text-transform:uppercase;
 }
 
 nav a:hover {
@@ -67,7 +70,7 @@ nav a:hover {
 
         /* Main Container */
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -82,15 +85,15 @@ nav a:hover {
         /* Place Card Styling */
         .place {
             background: light lavendar;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             border-radius: 15px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 10px 30px rgba(75, 0, 130, 0.1);
             overflow: hidden;
         }
 
         /* Image fully visible fix */
         .place img {
-            width: 100%;
+            width: 70%;
             height: 350px; 
             object-fit:cover;
             display: block;
