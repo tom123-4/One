@@ -182,7 +182,33 @@ footer {
         <button>Submit</button>
     </div>
 </div>
+<script>
+    function validateLogin() {
+        // Get the values the user typed
+        const email = document.getElementById("userEmail").value;
+        const pass = document.getElementById("userPass").value;
 
+        // Set your "correct" credentials here
+        const correctEmail = "admin@tourism.com";
+        const correctPass = "Tamil123";
+
+        // First, check the email
+        if (email !== correctEmail) {
+            alert("Email not recognized. Please check your email address.");
+            return false; // Stops the form
+        }
+
+        // Second, check the password
+        if (pass !== correctPass) {
+            alert("Incorrect password! Please try again.");
+            return false; // Stops the form
+        }
+
+        // If both are correct
+        alert("Login Successful! Redirecting to your dashboard...");
+        return true; 
+    }
+</script>
 <!-- FOOTER -->
 <footer>
     <p>&copy; 2026 Tamilnadu Tourism | All Rights Reserved</p>
