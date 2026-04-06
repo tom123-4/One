@@ -185,5 +185,51 @@ footer {
 <footer>
     <p>&copy; 2026 Tamilnadu Tourism | All Rights Reserved</p>
 </footer>
+<script>
+function validateForm() {
+    // 1. Get values from the input fields
+    const name = document.getElementById('userName').value.trim();
+    const email = document.getElementById('userEmail').value.trim();
+    const phone = document.getElementById('userPhone').value.trim();
+    const pass = document.getElementById('userPass').value.trim();
+
+    // 2. Define Patterns (Regex)
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Standard email format
+    const phonePattern = /^[0-9]{10}$/; // Exactly 10 digits
+
+    // 3. Validation Logic
+    
+    // Name Check
+    if (name === "") {
+        alert("Please enter your Full Name.");
+        return;
+    }
+
+    // Email Check (Correct format)
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid Email Address (e.g., name@mail.com).");
+        return;
+    }
+
+    // Phone Number Check (10 digits only)
+    if (!phonePattern.test(phone)) {
+        alert("Invalid Phone Number! Please enter exactly 10 digits.");
+        return;
+    }
+
+    // Password Check (Correctness)
+    // Let's pretend the correct password is "TN2026"
+    if (pass === "") {
+        alert("Password field cannot be empty.");
+        return;
+    } else if (pass !== "TN2026") {
+        alert("Incorrect Password! Please try again.");
+        return;
+    }
+
+    // 4. Success Message
+    alert("Login Successful! Welcome to Tamilnadu Tourism.");
+}
+</script>
 </body>
 </html>
